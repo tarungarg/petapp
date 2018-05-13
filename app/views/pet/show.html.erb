@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">Prediction</h5>
+    <h6 class="card-subtitle mb-2 text-muted">As per input, this is our prediction</h6>
+    <h2 class="card-text"><%= @user_input.pet %></h2>
+    <%= link_to 'Yes', pet_update_prediction_path(id: @user_input.id, predict: true), method: :put, class: 'card-link', :remote => true  %>
+    <!-- <a href="#" class="card-link">Yes</a> -->
+    <%= link_to 'No', pet_update_prediction_path(id: @user_input.id, predict: false), method: :put, class: 'card-link', :remote => true  %>
+  </div>
+</div>

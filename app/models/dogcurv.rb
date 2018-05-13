@@ -1,0 +1,2 @@
+class Dogcurv < ApplicationRecord
+end
