@@ -14,8 +14,8 @@ class UserPetInput < ApplicationRecord
   class << self
      def add_pet_info(params)
       input_prediction = 'Dog'
-       pet_info = { height: params[:height], width: params[:width], pet: input_prediction }
-       create(pet_info)
+       pet_info = { height: params[:height], weigh: params[:weigh], pet: input_prediction }
+       create!(pet_info)
      end
   end
 end
